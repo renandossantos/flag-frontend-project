@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Agende sua avaliação gratuita",
+    "subtitulo": "Transforme seus objetivos em resultados com um plano personalizado",
+    "contatos": {
+      "telefone": {
+        "numero": "+55 (21) 98765-4321",
+        "whatsapp": true,
+        "horario": "Seg-Sex: 8h às 20h"
+      },
+      "email": {
+        "endereco": "contato@drlucasmendes.com",
+        "assunto_padrao": "Consulta - Site Academia"
+      }
+    },
+    "redes_sociais": {
+      "instagram": {
+        "url": "https://instagram.com/drlucasmendes",
+        "handle": "@drlucasmendes"
+      },
+      "linkedin": {
+        "url": "https://linkedin.com/in/drlucasmendes",
+        "badge": "Perfil Premium"
+      }
+    },
+    "agendamento": {
+      "forms": "https://drlucasmendes.agendamento.com",
+      "calendly": "https://calendly.com/drlucasmendes",
+      "cta": "Reserve seu horário online"
+    },
+    "selos": [
+      "Profissional Certificado ACE",
+      "Atendimento 5 estrelas",
+      "Resposta em até 24h"
+    ]
+  }
+]

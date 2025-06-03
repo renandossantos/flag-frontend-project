@@ -1,0 +1,104 @@
+[
+  {
+    "categoria": "Platinum Elite 1:1",
+    "tipo": "Presencial",
+    "destaque": true,
+    "beneficios": [
+      "Sessões individuais com o PhD Lucas Mendes",
+      "Avaliação biomecânica 3D completa",
+      "Programa periodizado mensal",
+      "Monitoramento contínuo via wearable",
+      "Acesso ao app exclusivo (análises em tempo real)",
+      "Check-in nutricional semanal",
+      "Garantia de resultados documentada"
+    ],
+    "frequencia": "3x/semana (12 sessões/mês)",
+    "duracao": "50 minutos/sessão",
+    "valor": "R$ 2.800,00/mês",
+    "valor_avulso": "R$ 350,00/sessão",
+    "diferencial": "Protocolos usados por atletas olímpicos"
+  },
+  {
+    "categoria": "Duo Performance",
+    "tipo": "Presencial",
+    "beneficios": [
+      "Treino para duplas (amigos/casais)",
+      "Programa concorrente (gamificação)",
+      "Avaliação de composição corporal mensal",
+      "Relatório de evolução comparativa",
+      "2 consultas nutricionais mensais",
+      "Acesso à plataforma de exercícios"
+    ],
+    "frequencia": "3x/semana",
+    "duracao": "60 minutos/sessão",
+    "valor": "R$ 1.900,00/mês (R$ 950,00 por pessoa)",
+    "valor_avulso": "R$ 250,00/sessão por pessoa",
+    "diferencial": "Economia de 32% em relação ao individual"
+  },
+  {
+    "categoria": "Home Elite",
+    "tipo": "Domiciliar",
+    "beneficios": [
+      "Treino com equipamentos portáteis de alta tecnologia",
+      "Análise ambiental para otimização do espaço",
+      "Kit de treino móvel (incluído no plano)",
+      "Programa híbrido (presencial + online)",
+      "Sensor de movimento para correção postural"
+    ],
+    "frequencia": "2x/semana + 3 online",
+    "duracao": "60 minutos/sessão presencial",
+    "valor": "R$ 3.200,00/mês",
+    "valor_avulso": "R$ 450,00/sessão",
+    "observacao": "Zonas de atendimento limitadas"
+  },
+  {
+    "categoria": "Online Pro",
+    "tipo": "Remoto",
+    "beneficios": [
+      "Plataforma de treino imersivo 360°",
+      "Sessões ao vivo com feedback em tempo real",
+      "Biblioteca com 200+ videoaulas",
+      "Scanner postural via IA",
+      "Comunidade exclusiva",
+      "Desafios mensais com prêmios"
+    ],
+    "frequencia": "Flexível (ilimitado)",
+    "duracao": "Acesso 24/7",
+    "valor": "R$ 680,00/mês",
+    "diferencial": "7 dias grátis para teste"
+  },
+  {
+    "categoria": "Athlete Genesis",
+    "tipo": "Programa",
+    "destaque": true,
+    "beneficios": [
+      "Preparação para competições",
+      "Periodização científica",
+      "Acesso ao laboratório de performance (1x/mês)",
+      "Suporte durante eventos",
+      "Parceria com fisioterapeuta esportivo",
+      "Análise de vídeo profissional",
+      "Plano midiático (para atletas patrocinados)"
+    ],
+    "frequencia": "5-6x/semana + monitoramento 24h",
+    "duracao": "Mínimo 6 meses",
+    "valor": "R$ 4.500,00/mês",
+    "condicoes": "Processo seletivo necessário"
+  },
+  {
+    "categoria": "Corporate Wellness",
+    "tipo": "Empresarial",
+    "beneficios": [
+      "Programa para equipes (5-20 pessoas)",
+      "Treinos na empresa",
+      "Palestras mensais de saúde",
+      "Descontos em planos individuais",
+      "Relatório de produtividade",
+      "Gamificação corporativa"
+    ],
+    "frequencia": "Personalizado",
+    "duracao": "Contrato trimestral",
+    "valor": "A partir de R$ 8.000,00/mês",
+    "diferencial": "Redução de 40% no absenteísmo"
+  }
+]

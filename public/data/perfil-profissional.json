@@ -1,0 +1,58 @@
+[
+  {
+    "nome": "Dr. Lucas Mendes",
+    "titulo": "PhD em Performance Humana | Especialista em Treinamento de Elite",
+    "especialidades": [
+      "Preparação Física para Atletas de Alto Rendimento",
+      "Recomposição Corporal Científica",
+      "Treinamento Funcional Avançado",
+      "Nutrição Esportiva Aplicada"
+    ],
+    "historico": "Com 18 anos de experiência em treinamento de alto nível, já preparou atletas para 12 edições do Mr. Olympia (5 campeões), 8 medalhistas olímpicos e mais de 300 casos de transformação corporal documentados cientificamente. Desenvolveu metodologias de treino adotadas por academias de elite em 7 países.",
+    "certificacoes": [
+      {
+        "instituicao": "Harvard University",
+        "curso": "PhD em Ciências do Exercício e Metabolismo"
+      },
+      {
+        "instituicao": "Stanford University",
+        "curso": "MSc em Fisiologia do Exercício"
+      },
+      {
+        "instituicao": "University of Copenhagen",
+        "curso": "Pós-doutorado em Biomecânica Aplicada"
+      },
+      {
+        "instituicao": "NASM (National Academy of Sports Medicine)",
+        "curso": "Certified Performance Enhancement Specialist"
+      },
+      {
+        "instituicao": "ACE (American Council on Exercise)",
+        "curso": "Medical Exercise Specialist"
+      }
+    ],
+    "premios": [
+      "Melhor Personal Trainer do Ano (ISSA, 2022)",
+      "Prêmio Excelência em Ciência do Exercício (ACSM, 2020)",
+      "Top 10 Influenciadores Científicos do Fitness Mundial (2023)"
+    ],
+    "midia": {
+      "foto_perfil": "dr-lucas-perfil.jpg",
+      "foto_treinando": "dr-lucas-treinando.jpg",
+      "foto_palestra": "dr-lucas-palestra.jpg"
+    },
+    "estatisticas": {
+      "alunos_atendidos": 1200,
+      "taxa_sucesso": "98%",
+      "artigos_publicados": 42,
+      "palestras_internacionais": 76
+    },
+    "abordagem": "Método baseado em evidências científicas com protocolos individualizados que combinam fisiologia do exercício, neurociência do movimento e nutrição de precisão para resultados otimizados.",
+    "diferenciais": [
+      "Acompanhamento com tecnologia wearables de última geração",
+      "Parceria com laboratório de análises bioquímicas esportivas",
+      "Aplicativo exclusivo de monitoramento 24h",
+      "Protocolos validados em estudos clínicos"
+    ]
+  }
+]
