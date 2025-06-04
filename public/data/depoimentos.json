@@ -1,25 +1,28 @@
 [
   {
+    "id": "1",
     "nome": "Carlos Silva",
     "idade": 32,
     "categoria": "acompanhamento particular",
     "depoimento": "O acompanhamento particular mudou minha vida! Perdi 12kg em 3 meses e ganhei muita disposição. O professor foi incrível em ajustar os treinos conforme minha evolução.",
     "nota": 5,
-    "foto_antes": "carlos_antes.jpg",
-    "foto_depois": "carlos_depois.jpg",
+    "foto_antes": "carlos_antes.png",
+    "foto_depois": "carlos_depois.png",
     "data": "15/03/2024"
   },
   {
+    "id": "2",
     "nome": "Ana Paula Rocha",
     "idade": 28,
     "categoria": "treinos personalizados",
     "depoimento": "Os treinos personalizados fizeram toda diferença para minhas dores nas costas. Em 2 meses já senti uma melhora enorme na postura e força muscular.",
     "nota": 5,
-    "foto_antes": "ana_antes.jpg",
-    "foto_depois": "ana_depois.jpg",
+    "foto_antes": "ana_antes.png",
+    "foto_depois": "ana_depois.png",
     "data": "22/02/2024"
   },
   {
+    "id": "3",
     "nome": "Roberto Almeida",
     "idade": 45,
     "categoria": "agendamento de aulas",
@@ -30,6 +33,7 @@
     "data": "10/01/2024"
   },
   {
+    "id": "4",
     "nome": "Juliana Costa",
     "idade": 35,
     "categoria": "treinos na academia ou a domicilio",
@@ -40,16 +44,18 @@
     "data": "05/04/2024"
   },
   {
+    "id": "5",
     "nome": "Marcos Oliveira",
     "idade": 40,
     "categoria": "acompanhamento particular",
     "depoimento": "Depois de 10 anos sedentário, o acompanhamento constante me motivou a não desistir. Hoje sou outra pessoa, com mais saúde e autoestima!",
     "nota": 5,
-    "foto_antes": "marcos_antes.jpg",
-    "foto_depois": "marcos_depois.jpg",
+    "foto_antes": "marcos_antes.png",
+    "foto_depois": "marcos_depois.png",
     "data": "18/03/2024"
   },
   {
+    "id": "6",
     "nome": "Fernanda Lima",
     "idade": 29,
     "categoria": "treinos personalizados",
@@ -60,16 +66,18 @@
     "data": "30/01/2024"
   },
   {
+    "id": "7",
     "nome": "Ricardo Santos",
     "idade": 50,
     "categoria": "agendamento de aulas",
-    "depoimento": "O sistema de agendamento online é muito prático. Consigo marcar e remarcar aulas conforme meu trabalho permite, sem burocracia.",
+    "depoimento": "O sistema de agendamento online é muito prático. Consigo marcar e remarcar aulas conforme meu trabalho permite, sem burocracia. Estou muito feliz com a evolução!",
     "nota": 4,
-    "foto_antes": "ricardo_antes.jpg",
-    "foto_depois": "ricardo_depois.jpg",
+    "foto_antes": "ricardo_antes.png",
+    "foto_depois": "ricardo_depois.png",
     "data": "12/02/2024"
   },
   {
+    "id": "8",
     "nome": "Patrícia Gomes",
     "idade": 38,
     "categoria": "treinos na academia ou a domicilio",
