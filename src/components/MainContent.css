@@ -1,0 +1,8 @@
+main {
+  background-color: rgb(225, 2, 2);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border: 1px solid yellow;
+}

@@ -1,38 +1,8 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+html,
 body {
-  border: 2px solid red;
   margin: 0;
+  padding: 0;
+  height: 100%; /* Essencial para ocupar a tela toda */
   font-family: sans-serif;
-  background-color: #0e2d2d;
-  color: #d9d9d9;
-}
-
-header,
-footer {
-  background-color: #0b1014;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-footer {
-  color: #d9d9d9;
-}
-
-main {
-  padding: 2rem;
+  background-color: #f0f0f0;
 }
