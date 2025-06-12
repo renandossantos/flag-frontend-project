@@ -1,27 +1,35 @@
 import "./App.css";
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import MainContent from "./components/MainContent/MainContent";
+import Footer from "./components/Footer/Footer";
+import PerfilProfissional from "./components/sections/PerfilProfissional/PerfilProfissional";
+
+import Planos_home from "./components/sections/Planos/Planos_home";
+import Planos_pagina from "./components/sections/Planos/Planos_pagina";
+
+import Depoimentos from "./components/sections/Depoimentos/Depoimentos2";
+import Contato from "./components/sections/Contato/Contato";
 
 function App() {
   return (
     <div className="app">
-      {/*  -- HTML hardcoded para marcação -- 
-      <header>
-        <h1>Projeto FrontEnd - Fitness</h1>
-      </header>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
 
-      <main>
-        <p>Conteúdo principal do site.</p>
-      </main>
+          <Route path="/planos_home" element={<Planos_home />} />
+          <Route path="/planos_pagina" element={<Planos_pagina />} />
 
-      <footer>
-        <p>&copy; 2025 - Todos os direitos reservados</p>
-      </footer> */}
-
-      <Header />
-      <MainContent />
-      <Footer />
+          <Route path="/perfil-profissional" element={<PerfilProfissional />} />
+          <Route path="/depoimentos" element={<Depoimentos />} />
+          <Route path="/contato" element={<Contato />} />
+          {/* <Route path="/area-aluno" element={<AreaAluno />} /> */}
+          <Route path="*" element={<h1>Página não encontrada</h1>} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

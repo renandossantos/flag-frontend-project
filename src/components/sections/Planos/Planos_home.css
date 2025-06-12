@@ -1,0 +1,148 @@
+.planos {
+  background-color: rgb(51, 51, 51);
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.planos h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: antiquewhite;
+}
+
+.carrossel-container {
+  position: relative;
+  max-width: 100vw;
+  margin: 0 auto;
+  /* padding: 0 1rem; */
+
+  /* border: 3px solid purple; */
+}
+
+.carrossel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0.5rem;
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none;
+}
+
+.carrossel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+
+  width: clamp(220px, 25vw, 280px);
+  padding: 2rem 4rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+
+  color: white;
+  text-align: start;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.carrossel .item-categoria {
+  color: #ff7e3b;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.carrossel .carrossel-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0px 3px greenyellow;
+}
+
+.item-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-info p,
+.item-info li {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.item-beneficios {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.item-beneficios li::before {
+  content: "✔️";
+  margin-right: 0.5rem;
+  color: #ff7e3b;
+}
+
+.item-preco {
+  font-weight: bold;
+  color: #ff7e3b;
+  margin-top: 0.5rem;
+}
+
+.item-destaque {
+  border: 3px solid gold;
+}
+.item-destaque:hover {
+  box-shadow: 0 0px 12px goldenrod;
+}
+
+/* Arrows */
+/* .seta {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.seta img {
+  width: 24px;
+  height: 24px;
+}
+
+.seta.esquerda {
+  left: -20px;
+}
+
+.seta.direita {
+  right: -20px;
+} */
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carrossel-item {
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carrossel-item {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .carrossel-item {
+    width: 30%;
+  }
+}

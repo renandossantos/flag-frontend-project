@@ -1,38 +1,36 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="site-header">
       <nav className="navbar">
         <div className="logo">
-          <img src="/images/logo.png" />
+          <img src="/images/logo.png" alt="Logo" />
         </div>
-
         <ul className="nav-links">
           <li>
-            <a href="#home">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#planos">Planos</a>
+            <Link to="/planos">Planos</Link>
           </li>
           <li>
-            <a href="#perfil">Perfil Prof</a>
+            <Link to="/perfil-profissional">Perfil do Profissional</Link>
           </li>
           <li>
-            <a href="#depoimentos">Depoimentos</a>
+            <Link to="/depoimentos">Depoimentos</Link>
           </li>
           <li>
-            <a href="#contatos">Contatos</a>
+            <Link to="/contato">Contatos</Link>
           </li>
-
           <li>
-            <a href="#area-aluno" className="btn-aluno">
+            <Link to="/area-aluno" className="btn-aluno">
               Área do aluno
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
-
       <div className="hero">
         <div className="hero-image">
           <img src="/images/hero-image.png" alt="Imagem de capa" />

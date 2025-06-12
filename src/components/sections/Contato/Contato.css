@@ -6,3 +6,7 @@
   align-items: center;
   border: 2px solid green;
 }
+
+.contato h2 {
+  color: red;
+}

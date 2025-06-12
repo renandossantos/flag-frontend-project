@@ -1,0 +1,41 @@
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  /* width: 50px; */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s ease;
+}
+
+.seta:hover {
+  background: white;
+}
+
+.seta img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.seta.esquerda {
+  left: 0.3rem;
+}
+
+.seta.direita {
+  right: 0.3rem;
+}
+
+/* @media (max-width: 768px) {
+  .seta {
+    display: none;
+  } 
+}*/

@@ -1,8 +1,9 @@
 [
   {
     "id": "1",
+    "foto_perfil": "2.png",
     "nome": "Carlos Silva",
-    "idade": 32,
+    "idade": 27,
     "categoria": "acompanhamento particular",
     "depoimento": "O acompanhamento particular mudou minha vida! Perdi 12kg em 3 meses e ganhei muita disposição. O professor foi incrível em ajustar os treinos conforme minha evolução.",
     "nota": 5,
@@ -12,6 +13,7 @@
   },
   {
     "id": "2",
+    "foto_perfil": "4.png",
     "nome": "Ana Paula Rocha",
     "idade": 28,
     "categoria": "treinos personalizados",
@@ -23,28 +25,31 @@
   },
   {
     "id": "3",
+    "foto_perfil": "1.png",
     "nome": "Roberto Almeida",
     "idade": 45,
     "categoria": "agendamento de aulas",
     "depoimento": "A flexibilidade no agendamento das aulas foi perfeita para minha rotina corrida. Consigo treinar mesmo com minha agenda de executivo.",
     "nota": 4,
-    "foto_antes": "roberto_antes.jpg",
-    "foto_depois": "roberto_depois.jpg",
+    "foto_antes": "roberto_antes.png",
+    "foto_depois": "roberto_depois.png",
     "data": "10/01/2024"
   },
   {
     "id": "4",
+    "foto_perfil": "1.png",
     "nome": "Juliana Costa",
     "idade": 35,
     "categoria": "treinos na academia ou a domicilio",
     "depoimento": "Adorei a opção de poder treinar em casa quando necessário. O personal trouxe todos os equipamentos e o resultado foi igual ao da academia!",
     "nota": 5,
-    "foto_antes": "juliana_antes.jpg",
-    "foto_depois": "juliana_depois.jpg",
+    "foto_antes": "juliana_antes.png",
+    "foto_depois": "juliana_depois.png",
     "data": "05/04/2024"
   },
   {
     "id": "5",
+    "foto_perfil": "1.png",
     "nome": "Marcos Oliveira",
     "idade": 40,
     "categoria": "acompanhamento particular",
@@ -56,17 +61,19 @@
   },
   {
     "id": "6",
+    "foto_perfil": "5.png",
     "nome": "Fernanda Lima",
     "idade": 29,
     "categoria": "treinos personalizados",
     "depoimento": "Meu treino foi adaptado para me preparar para uma maratona. Em 4 meses já consegui melhorar meu tempo em 25%! Superou todas expectativas.",
     "nota": 5,
-    "foto_antes": "fernanda_antes.jpg",
-    "foto_depois": "fernanda_depois.jpg",
+    "foto_antes": "fernanda-lima.png",
+    "foto_depois": "fernanda_depois.png",
     "data": "30/01/2024"
   },
   {
     "id": "7",
+    "foto_perfil": "3.png",
     "nome": "Ricardo Santos",
     "idade": 50,
     "categoria": "agendamento de aulas",
@@ -78,13 +85,14 @@
   },
   {
     "id": "8",
+    "foto_perfil": "8.png",
     "nome": "Patrícia Gomes",
     "idade": 38,
     "categoria": "treinos na academia ou a domicilio",
     "depoimento": "Com dois filhos pequenos, poder alternar entre academia e treinos em casa foi a solução perfeita. Resultados visíveis em apenas 8 semanas!",
     "nota": 5,
-    "foto_antes": "patricia_antes.jpg",
-    "foto_depois": "patricia_depois.jpg",
+    "foto_antes": "patricia_antes.png",
+    "foto_depois": "patricia_depois.png",
     "data": "08/03/2024"
   }
 ]

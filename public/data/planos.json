@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "categoria": "Platinum Elite 1:1",
     "tipo": "Presencial",
     "destaque": true,
@@ -19,6 +20,7 @@
     "diferencial": "Protocolos usados por atletas olímpicos"
   },
   {
+    "id": "2",
     "categoria": "Duo Performance",
     "tipo": "Presencial",
     "beneficios": [
@@ -36,6 +38,7 @@
     "diferencial": "Economia de 32% em relação ao individual"
   },
   {
+    "id": "3",
     "categoria": "Home Elite",
     "tipo": "Domiciliar",
     "beneficios": [
@@ -52,6 +55,7 @@
     "observacao": "Zonas de atendimento limitadas"
   },
   {
+    "id": "4",
     "categoria": "Online Pro",
     "tipo": "Remoto",
     "beneficios": [
@@ -68,6 +72,7 @@
     "diferencial": "7 dias grátis para teste"
   },
   {
+    "id": "5",
     "categoria": "Athlete Genesis",
     "tipo": "Programa",
     "destaque": true,
@@ -86,6 +91,7 @@
     "condicoes": "Processo seletivo necessário"
   },
   {
+    "id": "6",
     "categoria": "Corporate Wellness",
     "tipo": "Empresarial",
     "beneficios": [

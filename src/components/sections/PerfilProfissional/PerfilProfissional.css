@@ -1,0 +1,81 @@
+.perfil {
+  padding: 2rem;
+  max-width: 100vw;
+  margin: auto;
+  background-color: blue;
+  border: 5px solid orange;
+}
+
+.perfil-titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.perfil-header {
+  background: rgba(71, 70, 70, 0.643);
+  display: flex;
+  width: 70vw;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 18px;
+
+  border: 2px solid rgb(56, 205, 10);
+}
+
+.perfil-header img {
+  width: 15rem;
+  height: auto;
+  /* border-radius: 50%; */
+  border-radius: 16px 40% 40% 16px;
+  object-fit: cover;
+}
+
+.perfil .letras .nome {
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+.perfil .letras .titulo {
+  font-size: 1.5rem;
+}
+
+.perfil-section {
+  margin-bottom: 2rem;
+}
+
+.perfil-section ul {
+  padding-left: 1.5rem;
+  list-style: circle;
+  color: white;
+}
+
+.perfil-estatisticas {
+  padding-left: 1.5rem;
+  list-style: none;
+  color: red;
+  padding: 2rem;
+}
+
+.perfil-estatisticas ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  list-style: none;
+  color: white;
+}
+
+.perfil-galeria .galeria {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.perfil-galeria img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+}

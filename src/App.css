@@ -10,10 +10,8 @@
   height: 100vh;
 }
 
-/* Exemplo básico para o conteúdo crescer e empurrar o footer para o fim */
 main {
   flex: 1;
-  padding: 20px;
 }
 
 header,

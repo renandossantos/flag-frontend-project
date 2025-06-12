@@ -18,16 +18,17 @@ function PerfilProfissional() {
 
   return (
     <section className="perfil">
+      <h2 className="perfil-titulo">Perfil do Profissional</h2>
+
       <div className="perfil-header">
-        {/* {perfil.midia && perfil.midia.foto_perfil && ( */}
         <img
           src={`/images/${perfil.midia.foto_perfil}`}
           alt={perfil.nome || "Perfil"}
         />
-        {/* )} */}
-        <div>
-          <h2>{perfil.nome}</h2>
-          <p>{perfil.titulo}</p>
+
+        <div className="letras">
+          <h2 className="nome">{perfil.nome}</h2>
+          <p className="titulo">{perfil.titulo}</p>
         </div>
       </div>
 
@@ -92,7 +93,7 @@ function PerfilProfissional() {
       )}
 
       {perfil.estatisticas && (
-        <div className="perfil-section">
+        <div className="perfil-estatisticas">
           <h3>Estatísticas</h3>
           <ul>
             <li>Alunos Atendidos: {perfil.estatisticas.alunos_atendidos}</li>
