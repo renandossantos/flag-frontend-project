@@ -3,7 +3,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vw;
+  min-height: 100vh;
   align-items: center;
   border: 1px solid yellow;
   overflow-x: hidden;

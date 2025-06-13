@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import "./Contato.css";
+import "../components/sections/Contato/Contato.css";
 
 function Contato() {
   const [contato, setContato] = useState(null);
