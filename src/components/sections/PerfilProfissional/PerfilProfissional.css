@@ -2,34 +2,38 @@
   padding: 2rem;
   max-width: 100vw;
   margin: auto;
-  background-color: blue;
-  border: 5px solid orange;
+  /* background-color: blue; */
+
+  /* border: 5px solid orange; */
 }
 
 .perfil-titulo {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: antiquewhite;
+  /* color: antiquewhite; */
+  color: var(--primary-color);
   text-align: center;
 }
 
 .perfil-header {
   background: rgba(71, 70, 70, 0.643);
   display: flex;
-  width: 70vw;
+  flex-direction: column; /* mudar em tela grande */
+  margin: 0 auto;
   gap: 2rem;
+  padding: 1rem;
   align-items: center;
   margin-bottom: 2rem;
   border-radius: 18px;
 
-  border: 2px solid rgb(56, 205, 10);
+  /* border: 1px solid rgb(56, 205, 10); */
+  border: 1px solid var(--primary-color);
 }
 
 .perfil-header img {
   width: 15rem;
   height: auto;
-  /* border-radius: 50%; */
-  border-radius: 16px 40% 40% 16px;
+  border-radius: 16px; /* border-radius: 16px 40% 40% 16px; */
   object-fit: cover;
 }
 
@@ -40,10 +44,16 @@
 
 .perfil .letras .titulo {
   font-size: 1.5rem;
+  padding-top: 0.3rem;
+  color: rgb(150, 150, 150);
 }
 
 .perfil-section {
-  margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(102, 102, 102, 0.3);
+  border-radius: 8px;
+  list-style: none;
+  color: greenyellow;
 }
 
 .perfil-section ul {
@@ -53,17 +63,17 @@
 }
 
 .perfil-estatisticas {
-  padding-left: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(102, 102, 102, 0.3);
+  border-radius: 8px;
   list-style: none;
-  color: red;
-  padding: 2rem;
+  color: greenyellow;
 }
 
 .perfil-estatisticas ul {
-  display: flex;
-  gap: 2rem;
+  display: block;
+  padding: 0.1rem;
   justify-content: flex-start;
-  padding-left: 1.5rem;
   list-style: none;
   color: white;
 }
@@ -78,4 +88,28 @@
   width: 100%;
   max-width: 300px;
   border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .perfil-galeria {
+    display: none;
+  }
+  .perfil .letras .nome {
+    font-size: 2rem;
+  }
+
+  .perfil .letras .titulo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .perfil-header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2.5rem;
+  }
+  .perfil-header img {
+    border-radius: 16px 40% 40% 16px;
+  }
 }

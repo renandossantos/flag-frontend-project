@@ -1,12 +1,209 @@
-.contato {
-  background-color: rgb(245, 245, 245);
+/* .contato {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   border: 2px solid green;
+  color: var(--third-color);
+} */
+
+/* .contato-titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+   color: antiquewhite;
+  color: var(--primary-color);
+} */
+
+/* .contato h2 {
+  color: var(--primary-color);
 }
 
-.contato h2 {
-  color: red;
+.contato-infos {
+  color: var(--third-color);
+} */
+
+/* 
+Cores do Projeto:
+:root {
+  --primary-color: #76d13b;
+  --secundary-color: #0e2d2d;
+  --third-color: #d9d9d9;
+  --fourth-color: #0b1014;
+  --fifth-color: #ccff00;
+}
+*/
+
+/* ######################################## */
+
+.contato {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  background-color: var(--secundary-color);
+}
+
+.contato-titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.contato > p {
+  font-size: 1.1rem;
+  color: #cacaca;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.contato-infos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.contato-infos > div {
+  background-color: var(--fourth-color);
+  padding: 1.5rem;
+  border-radius: 15px;
+  min-width: 250px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato-infos > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contato-infos h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contato-infos p {
+  color: var(--third-color);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.contato-infos a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contato-infos a:hover {
+  color: #76d13b;
+  text-shadow: 0 0 10px rgba(118, 209, 59, 0.5);
+}
+
+.contato-redes,
+.contato-agendamento,
+.contato-selos {
+  margin-bottom: 2rem;
+}
+
+.contato-redes h3,
+.contato-agendamento h3,
+.contato-selos h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contato-redes ul,
+.contato-agendamento ul,
+.contato-selos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contato-redes li,
+.contato-agendamento li {
+  background-color: var(--fourth-color);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato-redes li:hover,
+.contato-agendamento li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contato-redes a,
+.contato-agendamento a {
+  color: var(--third-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contato-redes a:hover,
+.contato-agendamento a:hover {
+  color: var(--primary-color);
+}
+
+.contato-selos li {
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.contato-selos li:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .contato {
+    padding: 1.5rem;
+  }
+
+  .contato-titulo {
+    font-size: 1.8rem;
+  }
+
+  .contato-infos {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contato-infos > div {
+    width: 100%;
+    max-width: 300px;
+    min-width: auto;
+  }
+
+  .contato-redes ul,
+  .contato-agendamento ul,
+  .contato-selos ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contato-redes li,
+  .contato-agendamento li {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
 }

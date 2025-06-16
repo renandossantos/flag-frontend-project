@@ -1,0 +1,133 @@
+.depoimentos-page {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 2rem 1rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.depoimentos-page h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.depoimentos-page-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .depoimentos-page-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.depoimentos-page-card {
+  background: rgba(40, 40, 40, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.depoimentos-page-card:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 8px #ccff00;
+  z-index: 2;
+}
+
+.depoimentos-page-perfil {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.foto-perfil {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccff00;
+}
+
+.depoimentos-page-info-perfil h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ccff00;
+}
+
+.depoimentos-page-info-perfil p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.depoimentos-page-texto-depoimento {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #eee;
+  text-align: left;
+}
+
+.depoimentos-page-antes-depois {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.depoimentos-page-antes-depois img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccff00;
+}
+
+.depoimentos-page-data-depoimento {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+  margin-top: auto;
+}
+
+/* =============== MOBILE AJUSTES =============== */
+@media (max-width: 768px) {
+  .depoimentos-page-card {
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+
+  .foto-perfil {
+    width: 56px;
+    height: 56px;
+  }
+
+  .depoimentos-page-antes-depois img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .depoimentos-page-info-perfil h3 {
+    font-size: 1rem;
+  }
+
+  .depoimentos-page-info-perfil p {
+    font-size: 0.8rem;
+  }
+
+  .depoimentos-page-texto-depoimento {
+    font-size: 0.9rem;
+  }
+}

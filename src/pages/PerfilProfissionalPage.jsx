@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-
-import "../components/sections/Depoimentos/Depoimentos.css";
-import "../components/sections/PerfilProfissional/PerfilProfissional.css";
-import "../components/sections/Contato/Contato.css";
+import "./PerfilProfissionalPage.css";
 
 function PerfilProfissional() {
   const [perfil, setPerfil] = useState(null);

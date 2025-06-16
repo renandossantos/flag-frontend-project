@@ -18,7 +18,7 @@ function Contato() {
 
   return (
     <section className="contato">
-      <h2>{titulo}</h2>
+      <h2 className="contato-titulo">{titulo}</h2>
       <p>{subtitulo}</p>
 
       <div className="contato-infos">

@@ -1,0 +1,154 @@
+.perfil {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+}
+
+.perfil-titulo {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.perfil-header {
+  background: rgba(50, 50, 50, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+  border: 1px solid var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.perfil-header img {
+  width: 180px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+}
+
+.letras {
+  text-align: center;
+}
+
+.letras .nome {
+  font-size: 2rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.letras .titulo {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+
+.perfil-section,
+.perfil-estatisticas {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.perfil-section h3,
+.perfil-estatisticas h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+}
+
+.perfil-section ul,
+.perfil-estatisticas ul {
+  padding-left: 1.2rem;
+}
+
+.perfil-section ul li,
+.perfil-estatisticas ul li {
+  margin-bottom: 0.5rem;
+}
+
+.perfil-galeria {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.perfil-galeria h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.perfil-galeria .galeria {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.perfil-galeria img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  border: 2px solid var(--primary-color);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .perfil-header {
+    padding: 1rem;
+  }
+
+  .perfil-header img {
+    width: 140px;
+  }
+
+  .letras .nome {
+    font-size: 1.6rem;
+  }
+
+  .letras .titulo {
+    font-size: 1rem;
+  }
+
+  .perfil-galeria .galeria {
+    gap: 1rem;
+  }
+
+  .perfil-galeria img {
+    max-width: 100%;
+  }
+
+  /* Se quiser ocultar a galeria no mobile, descomente: */
+  /* .perfil-galeria { display: none; } */
+}
+
+@media (min-width: 768px) {
+  .perfil-header {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+
+  .letras {
+    text-align: left;
+  }
+
+  .perfil-header img {
+    border-radius: 16px 40% 40% 16px;
+  }
+
+  .letras .nome {
+    font-size: 2.2rem;
+  }
+
+  .letras .titulo {
+    font-size: 1.2rem;
+  }
+}

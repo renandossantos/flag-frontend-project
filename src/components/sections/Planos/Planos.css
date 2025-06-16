@@ -8,21 +8,24 @@
 .planos h2 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
-  color: #ccff00;
+  color: var(--primary-color);
 }
 
-/* Força o swiper a ajustar slides corretamente */
+.swiper-container {
+  position: relative;
+}
+
 .swiper-planos {
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem; /* 2.5rem */
+  overflow: visible;
 }
 
-/* Cada slide ocupa altura total */
 .swiper-slide {
   display: flex;
   height: auto;
+  padding: 10px;
 }
 
-/* Card ocupa 100% da altura do slide */
 .card-planos {
   background: rgba(40, 40, 40, 0.85);
   backdrop-filter: blur(8px);
@@ -33,14 +36,11 @@
   border: 1px solid #333;
   transition: transform 0.3s ease;
   width: 100%;
-
   height: 100%;
   min-height: 500px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   min-height: 520px; /* altura consistente */
 }
 
@@ -77,13 +77,14 @@
   display: block;
   font-size: 0.85rem;
   color: #9aff9a;
+  margin-top: 0.5rem; /* modific */
 }
 
 .beneficios {
   list-style: none;
   padding-left: 0;
   margin-bottom: 1rem;
-  flex-grow: 1; /* Ocupa espaço vertical */
+  flex-grow: 1;
 }
 
 .beneficios li::before {
@@ -103,7 +104,7 @@
   transition: background-color 0.3s ease;
   display: block;
   margin: 0 auto;
-  margin-top: auto; /* Empurra para baixo */
+  margin-top: auto;
 }
 
 .botao-planos:hover {
@@ -121,7 +122,22 @@
 /* Swiper navigation and bullets */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ccff00;
+  color: #ccff00 !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 50% !important;
+  width: 44px !important;
+  height: 44px !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold;
 }
 
 .swiper-pagination-bullet {
@@ -132,4 +148,113 @@
 .swiper-pagination-bullet-active {
   background-color: #ccff00;
   opacity: 1;
+}
+
+/* Paginação customizada fora do swiper */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Força os estilos da paginação customizada */
+.custom-pagination .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #666 !important;
+  opacity: 0.6 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  border: none !important;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #ccff00 !important;
+  opacity: 1 !important;
+}
+
+/* =============== AJUSTES PARA MOBILE =============== */
+@media (max-width: 769px) {
+  /* Card menor no mobile */
+  .card-planos {
+    min-height: 420px; /* Reduzido de 520px */
+    padding: 1.2rem; /* Reduzido de 1.5rem */
+    border-radius: 12px; /* Ligeiramente menor */
+  }
+
+  .swiper-slide {
+    padding: 15px;
+  }
+
+  /* Títulos menores */
+  .card-planos h3 {
+    font-size: 1.2rem; /* Reduzido de 1.4rem */
+  }
+
+  .tipo {
+    font-size: 0.9rem; /* Reduzido de 1rem */
+  }
+
+  /* Preços com mais espaçamento */
+  .preco {
+    margin-bottom: 1.5rem; /* Aumentado de 1rem */
+  }
+
+  .preco span {
+    margin-top: 0.75rem; /* Aumentado de 0.5rem */
+  }
+
+  /* Benefícios com texto menor e ícone menor */
+  .beneficios {
+    font-size: 0.85rem; /* Texto menor */
+  }
+
+  .beneficios li::before {
+    font-size: 0.8rem; /* Ícone check menor */
+    margin-right: 0.4rem;
+  }
+
+  /* Botão menor */
+  .botao-planos {
+    padding: 0.6rem 1.2rem; /* Reduzido de 0.75rem 1.5rem */
+    font-size: 0.9rem;
+  }
+
+  /* Setas de navegação maiores e mais próximas das bordas */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 44px !important; /* Mantém tamanho padrão */
+    height: 44px !important;
+    margin-top: -22px; /* Centraliza verticalmente */
+  }
+
+  .swiper-button-next {
+    right: -5px !important; /* Mais próximo da borda direita */
+  }
+
+  .swiper-button-prev {
+    left: -5px !important; /* Mais próximo da borda esquerda */
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px !important; /* Ícone bem visível */
+    font-weight: bold;
+  }
+
+  /* Paginação customizada com mais espaço */
+  .custom-pagination {
+    margin-top: 2.5rem;
+  }
+
+  .custom-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
 }

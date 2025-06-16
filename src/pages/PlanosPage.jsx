@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-import "../components/sections/Planos/Planos.css";
+import "./PlanosPage.css";
 
 function Planos() {
   const [planos, setPlanos] = useState([]);
@@ -11,31 +10,33 @@ function Planos() {
       .then((data) => setPlanos(data));
   }, []);
 
+  if (!planos.length) return null;
+
   return (
-    <section className="planos">
+    <section className="planos-page">
       <h2>Nossos Planos</h2>
 
-      <div className="planos-cards">
+      <div className="planos-page-container">
         {planos.map((plano) => (
           <div
             key={plano.categoria}
-            className={`card ${plano.destaque ? "destaque" : ""}`}
+            className={`card ${plano.destaque ? "planos-page-destaque" : ""}`}
           >
             <h3>{plano.categoria}</h3>
-            <p className="tipo">{plano.tipo}</p>
+            <p className="planos-page-tipo">{plano.tipo}</p>
 
-            <div className="preco">
+            <div className="planos-page-preco">
               <strong>{plano.valor}</strong>
               {plano.valor_avulso && <span>({plano.valor_avulso})</span>}
             </div>
 
-            <ul className="beneficios">
+            <ul className="planos-page-beneficios">
               {plano.beneficios.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
 
-            <button className="botao">
+            <button className="planos-page-botao">
               {plano.destaque ? "Quero esse" : "Saiba mais"}
             </button>
           </div>

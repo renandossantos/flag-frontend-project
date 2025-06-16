@@ -1,0 +1,155 @@
+.planos-page {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 2rem 1rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.planos-page h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.planos-page-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(40, 40, 40, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+}
+
+/* Efeito hover sem ultrapassar layout */
+.card:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 8px #ccff00;
+  z-index: 2;
+}
+
+/* Conteúdo interno */
+.card h3 {
+  font-size: 1.4rem;
+  color: #ccff00;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.planos-page-tipo {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ccc;
+}
+
+.planos-page-preco {
+  font-weight: bold;
+  color: #ccff00;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.planos-page-preco span {
+  display: block;
+  font-size: 0.85rem;
+  color: #9aff9a;
+  margin-top: 0.5rem; /* modific */
+}
+
+.planos-page-beneficios {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.planos-page-beneficios li::before {
+  content: "✔️";
+  margin-right: 0.5rem;
+  color: #ccff00;
+}
+
+.planos-page-botao {
+  background-color: #ccff00;
+  color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top: auto;
+}
+
+.planos-page-botao:hover {
+  background-color: #b2e000;
+}
+
+.planos-page-destaque {
+  border: 3px solid #f2c300;
+}
+
+.planos-page-destaque:hover {
+  box-shadow: 0 0 10px #f2c300;
+}
+
+/* =============== AJUSTES PARA MOBILE =============== */
+@media (max-width: 769px) {
+  /* Card menor no mobile */
+  .card {
+    min-height: 420px; /* Reduzido de 520px */
+    padding: 1.2rem; /* Reduzido de 1.5rem */
+    border-radius: 12px; /* Ligeiramente menor */
+  }
+
+  /* Títulos menores */
+  .card h3 {
+    font-size: 1.2rem; /* Reduzido de 1.4rem */
+  }
+
+  .planos-page-tipo {
+    font-size: 0.9rem; /* Reduzido de 1rem */
+  }
+
+  /* Preços com mais espaçamento */
+  .planos-page-preco {
+    margin-bottom: 1.5rem; /* Aumentado de 1rem */
+  }
+
+  .planos-page-preco span {
+    margin-top: 0.75rem; /* Aumentado de 0.5rem */
+  }
+
+  /* Benefícios com texto menor e ícone menor */
+  .planos-page-beneficios {
+    font-size: 0.85rem; /* Texto menor */
+  }
+
+  .planos-page-beneficios li::before {
+    font-size: 0.8rem; /* Ícone check menor */
+    margin-right: 0.4rem;
+  }
+
+  /* Botão menor */
+  .planos-page-botao {
+    padding: 0.6rem 1.2rem; /* Reduzido de 0.75rem 1.5rem */
+    font-size: 0.9rem;
+  }
+}
