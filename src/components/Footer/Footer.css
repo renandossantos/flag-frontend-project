@@ -1,4 +1,134 @@
-h1 {
-  background-color: var(--fourth-color);
+.footer {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: var(--secundary-color);
+  color: white;
+
+  /* border: 4px solid sandybrown; */
+}
+
+/* .footer-titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--primary-color);
+}
+
+.footer > p {
+  font-size: 1.1rem;
+  color: #cacaca;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+} */
+
+.footer-selos {
+  margin-bottom: 2rem;
+}
+
+.footer-selos h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-selos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-selos li {
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-selos li:hover {
+  transform: scale(1.05);
+}
+
+.footer-redes ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-redes {
+  margin-bottom: 2rem;
+}
+
+.footer-redes h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-redes li {
+  background-color: var(--fourth-color);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-redes li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footer-redes a {
+  color: var(--third-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+  color: var(--primary-color);
+}
+
+.telefone {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  /*  .footer-selos ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  } */
+
+  .footer-selos {
+    display: none;
+  }
+
+  .footer-redes ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-redes li {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .telefone {
+    display: block;
+  }
 }

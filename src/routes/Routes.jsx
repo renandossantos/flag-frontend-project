@@ -7,6 +7,8 @@ import ContatoPage from "../pages/ContatoPage";
 import DepoimentosPage from "../pages/DepoimentosPage";
 import PerfilProfissionalPage from "../pages/PerfilProfissionalPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import Login from "../private-routes/Login";
+import Dashboard from "../private-routes/Dashboard";
 
 export default function AppRoutes() {
   return (
@@ -17,6 +19,8 @@ export default function AppRoutes() {
       <Route path="/depoimentos" element={<DepoimentosPage />} />
       <Route path="/perfil-profissional" element={<PerfilProfissionalPage />} />
       <Route path="/*" element={<NotFoundPage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   );
 }

@@ -1,121 +1,85 @@
-/* .contato {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  border: 2px solid green;
-  color: var(--third-color);
-} */
-
-/* .contato-titulo {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-   color: antiquewhite;
-  color: var(--primary-color);
-} */
-
-/* .contato h2 {
-  color: var(--primary-color);
-}
-
-.contato-infos {
-  color: var(--third-color);
-} */
-
-/* 
-Cores do Projeto:
-:root {
-  --primary-color: #76d13b; verde limão
-  --secundary-color: #0e2d2d; quase preto
-  --third-color: #d9d9d9; branco
-  --fourth-color: #0b1014; verde escuro
-  --fifth-color: #ccff00; amarelo limão
-}
-*/
-
-/* ######################################## */
-
-.contato {
-  /* padding: 2rem; */
+.contatoPage {
   text-align: center;
   width: 100%;
-  background-color: var(--secundary-color);
+  background-color: var(--fourth-color);
 }
 
-.contato-titulo {
+.contatoPage-titulo {
   padding: 2rem;
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
 }
 
-.contato > p {
+.contatoPage > p {
   font-size: 1.1rem;
   color: #cacaca;
   margin-bottom: 2rem;
   line-height: 1.5;
 }
 
-.contato-infos {
-  background-color: var(--fourth-color);
+.contatoPage-infos {
+  background-color: var(--secundary-color);
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin: 2rem 0;
   flex-wrap: wrap;
-  /* border-radius: 16px; */
   padding: 3rem;
+  font-size: 1.2rem;
 }
 
-.contato-infos > div {
+.contatoPage-infos > div {
   padding: 1.5rem;
   border-radius: 15px;
   min-width: 250px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* border: 1px solid red; */
 }
 
-.contato-infos > div:hover {
+.contatoPage-infos > div:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(78, 77, 77, 0.2);
 }
 
-.contato-infos h3 {
+.contatoPage-infos h3 {
   color: var(--primary-color);
   font-size: 1.3rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
-.contato-infos p {
+.contatoPage-infos p {
   color: var(--third-color);
   margin-bottom: 0.5rem;
   font-size: 1rem;
 }
 
-.contato-infos a {
+.contatoPage-infos a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
-.contato-infos a:hover {
+.contatoPage-infos a:hover {
   color: #76d13b;
   text-shadow: 0 0 10px rgba(118, 209, 59, 0.5);
 }
 
-.contato-agendamento {
+.contatoPage-agendamento {
   margin-bottom: 2rem;
 }
 
-.contato-agendamento h3 {
+.contatoPage-agendamento h3 {
   color: var(--primary-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
-.contato-agendamento ul {
+.contatoPage-agendamento ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -124,59 +88,59 @@ Cores do Projeto:
   flex-wrap: wrap;
 }
 
-.contato-agendamento li {
-  background-color: var(--fourth-color);
+.contatoPage-agendamento li {
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 1rem 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contato-agendamento li:hover {
+.contatoPage-agendamento li:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.contato-agendamento a {
-  color: var(--third-color);
+.contatoPage-agendamento a {
+  color: var(--fourth-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.contato-agendamento a:hover {
-  color: var(--primary-color);
+.contatoPage-agendamento a:hover {
+  font-weight: bold;
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-  .contato {
+  .contatoPage {
     padding: 1.5rem;
   }
 
-  .contato-titulo {
+  .contatoPage-titulo {
     font-size: 1.8rem;
   }
 
-  .contato-infos {
+  .contatoPage-infos {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
 
-  .contato-infos > div {
+  .contatoPage-infos > div {
     width: 100%;
     max-width: 300px;
     min-width: auto;
   }
 
-  .contato-agendamento ul {
+  .contatoPage-agendamento ul {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
 
-  .contato-agendamento li {
+  .contatoPage-agendamento li {
     width: 100%;
     max-width: 250px;
     text-align: center;
@@ -184,16 +148,17 @@ Cores do Projeto:
 }
 
 /* Mapa */
-.mapa-container {
+.contatoPage-mapa-container {
   margin-top: 2rem;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.mapa-container iframe {
+.contatoPage iframe {
   display: block;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 1.5rem;
   border-radius: 16px;
 }

@@ -20,7 +20,9 @@ function Planos() {
         {planos.map((plano) => (
           <div
             key={plano.categoria}
-            className={`card ${plano.destaque ? "planos-page-destaque" : ""}`}
+            className={`planos-page-card ${
+              plano.destaque ? "planos-page-destaque" : ""
+            }`}
           >
             <h3>{plano.categoria}</h3>
             <p className="planos-page-tipo">{plano.tipo}</p>

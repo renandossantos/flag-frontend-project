@@ -1,327 +1,289 @@
 .depoimentos {
-  /* background-color: rgb(51, 51, 51); */
-  padding: 2rem;
-  text-align: center;
-  width: 100%;
+  padding: 1rem 0.5rem;
+  max-width: 100vw;
+  margin: auto;
+
+  /* border: 5px solid blue; */
 }
 
 .depoimentos-titulo {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  /* color: antiquewhite; */
   color: var(--primary-color);
+  text-align: center;
 }
 
-.slider-container {
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 0;
+/* CSS para o grid de depoimentos */
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0.5rem;
+
+  /* border: 1px solid yellow; */
 }
 
-.mySwiper {
-  width: 100%;
-  padding: 20px 0 120px 0;
-  overflow: visible;
-}
-
-.swiper-slide {
-  width: auto !important;
-  max-width: 400px;
-}
-
-/* Mobile: card ocupa quase toda a tela */
-@media (max-width: 767px) {
-  .swiper-slide {
-    max-width: 90vw;
-  }
-}
-
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: #4070f4; */
-  background-color: var(--fifth-color);
-  border-radius: 25px 25px 0 25px;
-}
-
-.overlay::before,
-.overlay::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  width: 40px;
-  height: 40px;
-  /* background-color: #4070f4; */
-  background-color: var(--fifth-color);
-}
-
-.overlay::after {
-  border-radius: 0 25px 0 0;
-  /* background-color: #fff; */
-
-  background-color: var(--secundary-color);
-}
-
-.card {
-  /*  width: 400px;
-  max-width: 400px; */
-  width: 30%;
-  max-width: 30%;
-  min-width: 350px;
-  border-radius: 25px;
-
-  /* background-color: #fff; */
-  background-color: var(--secundary-color);
-
-  margin: 0 auto;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  flex-shrink: 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Mobile: card maior */
-@media (max-width: 767px) {
-  .card {
-    width: 90vw;
-    max-width: 90vw;
-    min-width: 280px;
-  }
-}
-
-.image-content,
-.card-content {
+.depoimentos-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 14px;
-}
-
-.image-content {
-  position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-
-.card-image {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: #fff;
-  padding: 3px;
-}
-
-/* Mobile: imagem um pouco menor para proporção */
-@media (max-width: 767px) {
-  .card-image {
-    width: 160px;
-    height: 160px;
-  }
-}
-
-.card-image .card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  /* border: 4px solid #4070f4; */
-  border: 4px solid var(--secundary-color);
-}
-
-.name {
-  font-size: 22px;
-  font-weight: 600;
-  /* color: #333; */
-  color: var(--third-color);
-  margin-bottom: 8px;
-}
-
-.idade {
-  font-size: 14px;
-  color: #888;
-  margin-bottom: 10px;
-  font-style: italic;
-}
-
-.description {
-  font-size: 16px;
-  color: #cacaca;
+  gap: 8px;
   text-align: center;
-  line-height: 1.5;
-  padding: 0 10px;
-  margin-bottom: 12px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  border: 1px solid var(--primary-color);
 }
 
-.data-depoimento {
-  font-size: 12px;
-  color: #999;
-  font-style: italic;
-  margin-top: 8px;
+.depoimentos-card:hover {
+  transform: translateX(-3px);
+  box-shadow: 0 8px 25px rgba(22, 178, 5, 0.2);
 }
 
-/* Mobile: texto um pouco maior */
-@media (max-width: 767px) {
-  .name {
-    font-size: 24px;
-  }
-
-  .description {
-    font-size: 18px;
-    padding: 0 15px;
-  }
-}
-
-/* Customização dos botões de navegação com efeito neon */
-.mySwiper .swiper-button-next,
-.mySwiper .swiper-button-prev {
-  /* color: #4070f4; */
-  color: var(--primary-color);
-  background: rgba(255, 255, 255, 0.9);
+.depoimentos-card-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-top: -25px;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  backdrop-filter: blur(10px);
-  z-index: 10;
+  background: var(--primary-color);
+  padding: 3px;
+  margin: 0 auto 1rem auto;
 }
 
-.mySwiper .swiper-button-next:hover,
-.mySwiper .swiper-button-prev:hover {
-  background: rgba(64, 112, 244, 0.1);
-  /* border: 2px solid #4070f4; */
-  border: 2px solid var(--primary-color);
-  /* box-shadow: 0 0 20px rgba(64, 112, 244, 0.6), 0 0 40px rgba(64, 112, 244, 0.4),
-    0 0 60px rgba(64, 112, 244, 0.2); */
-  box-shadow: 0 0 20px rgba(118, 209, 59, 0.6), 0 0 40px rgba(118, 209, 59, 0.4),
-    0 0 60px rgba(118, 209, 59, 0.2);
-  transform: scale(1.1);
+.depoimentos-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: rgb(150, 150, 150);
 }
 
-.mySwiper .swiper-button-next:after,
-.mySwiper .swiper-button-prev:after {
-  font-size: 18px;
-  font-weight: 900;
+.depoimentos-description {
+  text-align: justify;
+  color: rgb(205, 205, 205);
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-/* Posicionamento melhor dos botões */
-.mySwiper .swiper-button-next {
-  right: 10px;
+.depoimentos-date {
+  text-align: end;
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
-.mySwiper .swiper-button-prev {
-  left: 10px;
+/* Estilo para o container de ações */
+.depoimentos-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
 }
 
-/* Mobile: botões menores */
+/* ########################### */
+.btn-depoimentos {
+  background-color: #ccff00;
+  color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+}
+
+.btn-depoimentos:hover {
+  background-color: #b2e000;
+  transform: translateY(-1px);
+}
+
+.btn-depoimentos a {
+  text-decoration: none;
+  color: var(--fouth-color);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.depoimentos-nome {
+  color: whitesmoke;
+}
+
+/* --- Mobile ( até 767px) --- */
 @media (max-width: 767px) {
-  .mySwiper .swiper-button-next,
-  .mySwiper .swiper-button-prev {
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-  }
-
-  .mySwiper .swiper-button-next:after,
-  .mySwiper .swiper-button-prev:after {
-    font-size: 14px;
+  .depoimentos-card:nth-child(3),
+  .depoimentos-card:nth-child(4) {
+    display: none;
   }
 }
 
-/* Customização da paginação - mais afastada dos cards */
-.mySwiper .swiper-pagination {
-  bottom: 20px !important;
-  position: absolute;
-  left: 50% !important;
-  transform: translateX(-50%);
-  width: auto !important;
-  z-index: 10;
+/* --- Tablet (768px+) --- */
+@media (min-width: 768px) {
+  .depoimentos {
+    padding: 1.5rem;
+  }
+
+  .depoimentos-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .depoimentos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 1rem;
+  }
+
+  .depoimentos-card {
+    border-radius: 25px;
+    padding: 1.5rem;
+    gap: 10px;
+  }
+
+  .depoimentos-card-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .depoimentos-description {
+    font-size: 1rem;
+  }
+
+  .depoimentos-nome {
+    font-size: 1.2rem;
+  }
+
+  .btn-depoimentos {
+    max-width: 750px;
+  }
 }
 
-.mySwiper .swiper-pagination-bullet {
-  /* background-color: #4070f4; */
-  background-color: var(--fifth-color);
-  width: 12px;
-  height: 12px;
-  margin: 0 6px;
-  transition: all 0.3s ease;
-  opacity: 0.7;
+/* --- Desktop (1024px+) --- */
+@media (min-width: 1024px) {
+  .depoimentos {
+    padding: 2px;
+  }
+
+  .depoimentos-titulo {
+    font-size: 2rem;
+  }
+
+  .depoimentos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 1rem;
+  }
+
+  .depoimentos-card {
+    padding: 2rem;
+    gap: 12px;
+  }
+
+  .depoimentos-card:nth-child(4) {
+    display: none;
+  }
+
+  .depoimentos-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .depoimentos-card-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .depoimentos-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .depoimentos-nome {
+    font-size: 1.3rem;
+  }
+
+  .depoimentos-actions {
+    margin: 2rem;
+  }
+
+  .btn-depoimentos a {
+    font-size: 1.2rem;
+  }
 }
 
-.mySwiper .swiper-pagination-bullet:hover {
-  /* background-color: #265df2; */
-  background-color: var(--fifth-color);
-  transform: scale(1.2);
-  box-shadow: 0 0 10px rgba(64, 112, 244, 0.5);
-  opacity: 1;
-}
-
-.mySwiper .swiper-pagination-bullet-active {
-  /* background-color: #265df2; */
-  background-color: var(--primary-color);
-  transform: scale(1.3);
-  box-shadow: 0 0 15px rgba(64, 112, 244, 0.7);
-  opacity: 1;
-}
-
-/* Responsividade para telas grandes */
+/* --- Telas grandes (1400px+) --- */
 @media (min-width: 1400px) {
-  .card {
-    width: 380px;
-    max-width: 380px;
+  .depoimentos {
+    padding: 2rem 1rem;
+  }
+
+  .depoimentos-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .depoimentos-card {
+    padding: 2.5rem;
+  }
+
+  .depoimentos-card-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn-depoimentos {
+    max-width: 600px;
+    height: 3.5rem;
+  }
+
+  .btn-depoimentos a {
+    font-size: 1.3rem;
   }
 }
 
-@media (min-width: 1800px) {
-  .card {
-    width: 360px;
-    max-width: 360px;
-  }
-}
-
-/* Responsividade para mobile */
-@media (max-width: 767px) {
-  .card {
-    width: 90vw;
-    max-width: 90vw;
-    min-width: 280px;
+/* --- Mobile pequeno (até 480px) --- */
+@media (max-width: 480px) {
+  .depoimentos {
+    padding: 1rem 0.25rem;
   }
 
-  .card-image {
-    width: 160px;
-    height: 160px;
+  .depoimentos-titulo {
+    font-size: 1.3rem;
   }
 
-  .name {
-    font-size: 24px;
+  .depoimentos-grid {
+    gap: 15px;
+    padding: 0.25px;
   }
 
-  .description {
-    font-size: 18px;
-    padding: 0 15px;
+  .depoimentos-card {
+    min-width: 260px;
+    padding: 0.75rem;
+    border-radius: 15px;
   }
 
-  .mySwiper .swiper-button-next,
-  .mySwiper .swiper-button-prev {
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
+  .depoimentos-card-image {
+    width: 100px;
+    height: 100px;
   }
 
-  .mySwiper .swiper-button-next:after,
-  .mySwiper .swiper-button-prev:after {
-    font-size: 14px;
+  .depoimentos-description {
+    font-size: 0.85rem;
+  }
+
+  .depoimentos-nome {
+    font-size: 1rem;
+  }
+
+  .btn-depoimentos {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
 }

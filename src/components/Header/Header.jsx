@@ -16,6 +16,7 @@ function Header() {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [menuOpen]);
   // Fechar menu ao redimensionar para desktop
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -73,7 +74,7 @@ function Header() {
           </li>
           <li>
             <Link
-              to="/area-aluno"
+              to="/login"
               className="btn-aluno"
               onClick={() => setMenuOpen(false)}
             >
@@ -83,10 +84,8 @@ function Header() {
         </ul>
       </nav>
 
-      <div className="hero">
-        <div className="hero-image">
-          <img src="/images/hero-image.png" alt="Imagem de capa" />
-        </div>
+      <div className="hero-text">
+        <h1>More than Muscles</h1>
       </div>
     </header>
   );

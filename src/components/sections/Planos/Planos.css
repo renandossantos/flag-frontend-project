@@ -3,6 +3,8 @@
   padding: 2rem 1rem;
   text-align: center;
   overflow-x: hidden;
+
+  /* border: 4px solid red; */
 }
 
 .planos h2 {
@@ -11,19 +13,25 @@
   color: var(--primary-color);
 }
 
-.swiper-container {
+.swiper-container-planos {
   position: relative;
+
+  /* border: 3px solid blue; */
 }
 
 .swiper-planos {
-  padding-bottom: 3.5rem; /* 2.5rem */
+  padding-bottom: 3.5rem;
   overflow: visible;
 }
 
 .swiper-slide {
-  display: flex;
+  display: flex !important;
   height: auto;
-  padding: 10px;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 2px solid yellow; */
 }
 
 .card-planos {
@@ -36,12 +44,16 @@
   border: 1px solid #333;
   transition: transform 0.3s ease;
   width: 100%;
+  max-width: 400px;
   height: 100%;
   min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 520px; /* altura consistente */
+  min-height: 520px;
+
+  text-align: justify;
+  gap: 0.5rem;
 }
 
 /* Efeito hover sem ultrapassar layout */
@@ -181,15 +193,16 @@
 
 /* =============== AJUSTES PARA MOBILE =============== */
 @media (max-width: 769px) {
-  /* Card menor no mobile */
   .card-planos {
-    min-height: 420px; /* Reduzido de 520px */
-    padding: 1.2rem; /* Reduzido de 1.5rem */
-    border-radius: 12px; /* Ligeiramente menor */
+    min-height: 420px;
+    padding: 1.2rem;
+    border-radius: 12px;
   }
 
   .swiper-slide {
     padding: 15px;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Títulos menores */

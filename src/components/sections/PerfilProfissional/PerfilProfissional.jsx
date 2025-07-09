@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-
 import "./PerfilProfissional.css";
+import { Link } from "react-router-dom";
 
 function PerfilProfissional() {
   const [perfil, setPerfil] = useState(null);
@@ -33,7 +33,7 @@ function PerfilProfissional() {
         </div>
       </div>
 
-      {perfil.especialidades && (
+      {/*      {perfil.especialidades && (
         <div className="perfil-section">
           <h3>Especialidades</h3>
           <ul>
@@ -42,16 +42,16 @@ function PerfilProfissional() {
             ))}
           </ul>
         </div>
-      )}
+      )} */}
 
-      {perfil.historico && (
+      {/*    {perfil.historico && (
         <div className="perfil-section">
           <h3>Histórico</h3>
           <p>{perfil.historico}</p>
         </div>
-      )}
+      )} */}
 
-      {perfil.certificacoes && (
+      {/*     {perfil.certificacoes && (
         <div className="perfil-section">
           <h3>Certificações</h3>
           <ul>
@@ -62,9 +62,9 @@ function PerfilProfissional() {
             ))}
           </ul>
         </div>
-      )}
+      )} */}
 
-      {perfil.premios && (
+      {/*       {perfil.premios && (
         <div className="perfil-section">
           <h3>Prêmios</h3>
           <ul>
@@ -73,7 +73,7 @@ function PerfilProfissional() {
             ))}
           </ul>
         </div>
-      )}
+      )} */}
 
       {perfil.abordagem && (
         <div className="perfil-section">
@@ -93,7 +93,7 @@ function PerfilProfissional() {
         </div>
       )}
 
-      {perfil.estatisticas && (
+      {/*       {perfil.estatisticas && (
         <div className="perfil-estatisticas">
           <h3>Estatísticas</h3>
           <ul>
@@ -108,7 +108,7 @@ function PerfilProfissional() {
             </li>
           </ul>
         </div>
-      )}
+      )} */}
 
       {perfil.midia &&
         (perfil.midia.foto_treinando || perfil.midia.foto_palestra) && (
@@ -130,6 +130,10 @@ function PerfilProfissional() {
             </div>
           </div>
         )}
+      {/* ############ */}
+      <button className="btn-perfil-profissional">
+        <Link to="/perfil-profissional">Saiba Mais</Link>
+      </button>
     </section>
   );
 }

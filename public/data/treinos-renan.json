@@ -1,0 +1,87 @@
+[
+  {
+    "dia": "Segunda",
+    "letra": "A",
+    "categoria": "Peito",
+    "exercicios": [
+      { "nome": "Supino reto com halteres", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Crucifixo", "repeticoes": "4x10", "midia": "" },
+      {
+        "nome": "Pullover",
+        "repeticoes": "4x10",
+        "midia": ""
+      },
+      {
+        "nome": "Crucifixo em pé",
+        "repeticoes": "4x10",
+        "midia": ""
+      },
+      { "nome": "Prancha", "repeticoes": "3x30", "midia": "" },
+      { "nome": "Prancha escalada", "repeticoes": "3x30", "midia": "" }
+    ]
+  },
+  {
+    "dia": "Terça",
+    "letra": "B",
+    "categoria": "Perna",
+    "exercicios": [
+      {
+        "nome": "Agachamento",
+        "repeticoes": "4x10",
+        "midia": "./media/agachamento.mp4"
+      },
+      { "nome": "Agachamento sumô", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Agachamento isometria", "repeticoes": "4x10", "midia": "" },
+      {
+        "nome": "Posterior unilateral em pé",
+        "repeticoes": "4x10",
+        "midia": ""
+      },
+      {
+        "nome": "Posterior unilateral deitado",
+        "repeticoes": "4x10",
+        "midia": ""
+      },
+      { "nome": "Afundo", "repeticoes": "4x10", "midia": "" }
+    ]
+  },
+  {
+    "dia": "Quarta",
+    "letra": "C",
+    "categoria": "Ombro",
+    "exercicios": [
+      { "nome": "Elevação lateral", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Elevação Frontal", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Desenvolvimento", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Remada alta", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Abs infra", "repeticoes": "3x30", "midia": "" },
+      { "nome": "Abs tesoura", "repeticoes": "3x30", "midia": "" }
+    ]
+  },
+  {
+    "dia": "Quinta",
+    "letra": "D",
+    "categoria": "Bíceps e Tríceps",
+    "exercicios": [
+      { "nome": "Martelo", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Rosca alternada", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Rosca 21", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Tríceps testa halter", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Francês unilateral", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Francês anilha", "repeticoes": "4x10", "midia": "" }
+    ]
+  },
+  {
+    "dia": "Sexta",
+    "letra": "E",
+    "categoria": "Costas",
+    "exercicios": [
+      { "nome": "Serrote", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Remada cavalinho halter", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Cintura escapular", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Crucifixo inverso", "repeticoes": "4x10", "midia": "" },
+      { "nome": "Prancha lateral", "repeticoes": "3x30s", "midia": "" },
+      { "nome": "Giro russo", "repeticoes": "3x30s", "midia": "" }
+    ]
+  }
+]

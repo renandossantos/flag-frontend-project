@@ -21,31 +21,36 @@ function Planos() {
   return (
     <section className="planos">
       <h2 className="planos-titulo">Nossos Planos</h2>
-      <div className="swiper-container">
+
+      <div className="swiper-container-planos">
         <Swiper
           navigation={true}
           pagination={{
             clickable: true,
-            el: ".custom-pagination" /* novo */,
-            bulletClass: "swiper-pagination-bullet" /* novo */,
-            bulletActiveClass: "swiper-pagination-bullet-active" /* novo */,
+            el: ".custom-pagination",
+            bulletClass: "swiper-pagination-bullet",
+            bulletActiveClass: "swiper-pagination-bullet-active",
           }}
           modules={[Navigation, Pagination]}
           className="swiper-planos"
+          spaceBetween={10}
+          slidesPerView={3}
           loop={false}
           breakpoints={{
             0: {
-              slidesPerView: "auto",
+              slidesPerView: 1,
               spaceBetween: 16,
               centeredSlides: true,
+              centeredSlidesBounds: true,
+              centerInsufficientSlides: true,
             },
-            640: {
-              slidesPerView: "auto",
+            800: {
+              slidesPerView: 2,
               spaceBetween: 20,
               centeredSlides: false,
             },
             1024: {
-              slidesPerView: "auto",
+              slidesPerView: 3,
               spaceBetween: 30,
               centeredSlides: false,
             },

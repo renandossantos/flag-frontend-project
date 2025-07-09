@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "username": "username",
+    "password": "1234",
+    "foto_perfil": "2.png",
+    "nome": "Carlos Silva",
+    "idade": 27,
+    "categoria": "acompanhamento particular",
+    "foto": "carlos_antes.png",
+    "data-inicio": "15/03/2024"
+  },
+  {
+    "id": "2",
+    "username": "admin",
+    "password": "4321",
+    "foto_perfil": "2.png",
+    "nome": "Carlos Silva",
+    "idade": 27,
+    "categoria": "acompanhamento particular",
+    "foto": "carlos_antes.png",
+    "data-inicio": "15/03/2024"
+  }
+]

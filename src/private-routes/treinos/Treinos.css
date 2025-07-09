@@ -1,0 +1,180 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  border: 1px solid red;
+} */
+
+/* ################ */
+.treinos-container {
+  font-family: sans-serif;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #333;
+  width: 100%;
+  min-height: 810px;
+  text-align: center;
+
+  /* border: 3px solid orange; */
+}
+
+.loading,
+.erro {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.erro {
+  color: red;
+}
+
+.sem-resultados {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Estilos para o menu de treinos */
+.menu {
+  list-style: none;
+  padding: 1rem;
+  /* max-width: 600px; */
+  margin: 0 auto;
+
+  /* border: 4px solid red; */
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.dia {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dia:hover {
+  background-color: #666;
+}
+
+.treino {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.treino img,
+.treino video {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+/* Estilos para exercícios */
+.exercicio {
+  margin-bottom: 1rem;
+}
+
+.exercicio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exercicio-header span {
+  flex: 1;
+  text-align: center;
+}
+
+.exercicio-header span:first-child {
+  text-align: left;
+}
+
+.exercicio-header button {
+  flex: 1;
+  text-align: center;
+  min-width: 100px;
+
+  color: #333;
+}
+
+.exercicio .toggle-midia {
+  margin-left: 10px;
+  padding: 2px 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.exercicio .toggle-midia:hover {
+  background-color: #e9ecef;
+}
+
+.midia img,
+.midia video {
+  max-width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* Estilos para filtros */
+.filtros {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+.campo-busca {
+  width: 90%;
+  max-width: 600px;
+  padding: 10px 15px;
+  margin: 10px auto;
+  display: block;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo-busca:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.filtro-categoria {
+  width: 90%;
+  max-width: 600px;
+  padding: 10px 15px;
+  margin: 10px auto;
+  display: block;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+  color: #333;
+}
+
+.cadastrar-exercicios {
+  display: none;
+}
+
+.cadastrar-treinos {
+  display: none;
+}

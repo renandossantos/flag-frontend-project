@@ -2,7 +2,6 @@
   padding: 2rem;
   max-width: 100vw;
   margin: auto;
-  /* background-color: blue; */
 
   /* border: 5px solid orange; */
 }
@@ -10,7 +9,6 @@
 .perfil-titulo {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  /* color: antiquewhite; */
   color: var(--primary-color);
   text-align: center;
 }
@@ -90,7 +88,35 @@
   border-radius: 12px;
 }
 
-@media (max-width: 768px) {
+.btn-perfil-profissional {
+  background-color: #ccff00;
+  color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 2rem auto 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-perfil-profissional:hover {
+  background-color: #b2e000;
+  transform: translateY(-1px);
+}
+
+.btn-perfil-profissional a {
+  text-decoration: none;
+  color: var(--fouth-color);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* --- Mobile ( até 767px) --- */
+@media (max-width: 767px) {
   .perfil-galeria {
     display: none;
   }
@@ -103,6 +129,7 @@
   }
 }
 
+/* --- Tablet (768px+) --- */
 @media (min-width: 768px) {
   .perfil-header {
     display: flex;
@@ -111,5 +138,10 @@
   }
   .perfil-header img {
     border-radius: 16px 40% 40% 16px;
+  }
+
+  .btn-perfil-profissional {
+    max-width: 350px;
+    height: 3rem;
   }
 }

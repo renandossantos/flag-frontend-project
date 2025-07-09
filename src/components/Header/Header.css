@@ -1,25 +1,53 @@
 .site-header {
-  /* background-color: #000000; */
+  background-image: url("/images/hero-image-powerlift.jpg");
+  /* background-color: black; 
+  background-size: contain;*/
+  background-color: #1a1a1a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 95vh;
+  min-height: 600px;
   align-items: center;
+  position: relative;
 
-  border: 3px solid red;
+  /* border: 3px solid red; */
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .navbar {
   display: flex;
   background-color: rgba(102, 102, 102, 0.3);
+  backdrop-filter: blur(10px);
   border-radius: 8px;
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   position: relative;
-
-  flex-wrap: nowrap; /* modific */
+  flex-wrap: nowrap;
   min-height: 60px;
 
   /* border: 1px solid yellow; */
@@ -28,114 +56,122 @@
 .logo img {
   height: 50px;
   width: auto;
-  padding-left: 2rem;
-
-  flex-shrink: 0; /*modific */
+  padding-left: 1rem;
+  flex-shrink: 0;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 0.5rem; /* modific */
-  padding: 0 1rem; /* modific */
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
   margin: 0;
-
   flex-wrap: nowrap;
   overflow: hidden;
 }
 
-/* ################### */
 .nav-links li {
   flex: 1 1 auto;
   min-width: 0;
 }
-/* ################### */
 
 .nav-links a {
   text-decoration: none;
   font-weight: 500;
   color: whitesmoke;
-  background-color: #333439;
+  /* background-color: #333439; */
+  background-color: rgba(51, 52, 57, 0.8);
 
   padding: 0.8em clamp(0.5rem, 2vw, 1.5rem);
   border-radius: 8px;
-
-  /* ################### */
   font-size: clamp(0.75rem, 1.5vw, 1rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
   text-align: center;
-  /* Transição suave */
   transition: all 0.2s ease;
-  /* ################### */
-}
-
-.nav-links a.btn-aluno {
-  background-color: greenyellow !important;
-  color: #333439;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-links a:hover {
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgba(255, 255, 255, 0.9);
   color: #333439;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links a.btn-aluno {
+  /* background-color: greenyellow !important; */
+  background-color: rgba(173, 255, 47, 0.9) !important;
+  color: #333439;
+  margin-left: 2rem;
+  font-weight: 600;
 }
 
 .nav-links a.btn-aluno:hover {
-  background-color: #333439 !important;
-  color: whitesmoke;
+  /* background-color: #333439 !important; */
+  background-color: rgba(51, 52, 57, 0.9) !important;
+  color: white;
+  /* border: 0.5px solid whitesmoke; */
+  border: 1px solid rgba(173, 255, 47, 0.8);
 
-  /* border: 1px solid greenyellow; */
-  box-shadow: 2px 2px greenyellow;
+  /* box-shadow: 2px 2px greenyellow; */
+  box-shadow: 0 4px 12px rgba(173, 255, 47, 0.3);
 }
 
 /* ################ HERO IMAGE ################ */
-.hero {
-  width: 100%;
-  max-width: 1498px;
-  overflow: hidden;
-  margin: 0 auto;
-
-  border: 1px solid aqua;
-}
-
-.hero-image {
-  position: relative;
-  width: 100%;
-  max-height: min(60vh, 600px);
-  overflow: hidden;
-
-  border: 1px solid blueviolet;
-}
-
-.hero-image::after {
-  content: "";
+.hero-text {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4),
-    transparent 30%,
-    transparent 70%,
-    rgba(0, 0, 0, 0.4)
-  );
-  pointer-events: none;
-  z-index: 2;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  max-height: 680px;
+
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+
+  z-index: 3;
+  opacity: 0;
+  animation: fadeInUp 1.1s ease-out 0.5s forwards;
+
+  /* border: 2px solid yellow; */
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 0.4;
+    transform: translate(-50%, 5%);
+  }
+}
+
+/* .hero-image {
+  width: 100%;
+  height: min(60vh, 600px);
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
 }
 
 .hero-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center;
-
   display: block;
   z-index: 1;
   position: relative;
-
-  border: 1px solid red;
-}
+} */
 
 /* ################ HERO IMAGE - Fim ################ */
 
@@ -173,39 +209,147 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* TABLET */
-@media (max-width: 1299px) and (min-width: 769px) {
+/* --- Desktop grande(1400px+) --- */
+@media (min-width: 1400px) {
+  .navbar {
+    width: 80%;
+    padding: 1rem 2rem;
+  }
+
+  .logo img {
+    height: 60px;
+    padding-left: 2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .nav-links a {
+    padding: 1rem 1.5rem;
+  }
+
+  .hero-text {
+    width: 60%;
+    font-size: clamp(4rem, 6vw, 6.2rem);
+  }
+}
+
+/* --- Desktop (1024px até 1399px) --- */
+@media (max-width: 1399px) and (min-width: 1024px) {
   .navbar {
     width: 90%;
     padding: 0.5rem 1rem;
+  }
+
+  .logo img {
+    height: 45px;
+    padding-left: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    padding: 0.9rem 1.2rem;
+  }
+
+  .hero-text {
+    width: 60%;
+    top: 18%;
+    font-size: clamp(3.5rem, 6vw, 5.8rem);
+  }
+}
+
+/* --- Tablet grande (900px até 1023px) --- */
+@media (max-width: 1023px) and (min-width: 900px) {
+  .navbar {
+    width: 90%;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo img {
+    height: 45px;
+    padding-left: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links a.btn-aluno {
+    margin-left: 1rem;
+  }
+
+  .hero-text {
+    width: 60%;
+    top: 20%;
+    font-size: clamp(3rem, 7vw, 5.2rem);
+  }
+}
+
+/* --- Tablet até Desktop (880px até 1330px) --- */
+@media (max-width: 1330px) and (min-width: 880px) {
+  .hero-text {
+    width: 75%;
+    font-size: clamp(5rem, 6vw, 5rem);
+  }
+}
+
+/* --- Tablet (768px+) --- */
+@media (max-width: 899px) and (min-width: 769px) {
+  .site-header {
+    background-attachment: scroll;
+  }
+
+  .navbar {
+    width: 95%;
+    padding: 0.5rem 0.8rem;
     justify-content: center;
   }
+
   .logo {
     display: none;
   }
+
   .nav-links {
     gap: 0.5rem;
     padding: 0;
+    justify-content: center;
   }
-  .nav-links a {
-    padding: 0.8rem 1rem;
-    font-size: 0.9rem;
-    white-space: normal;
-    text-overflow: unset;
-    overflow: visible;
 
+  .nav-links a {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.9rem;
     min-height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1.2;
   }
+
+  .nav-links a.btn-aluno {
+    margin-left: 0.5rem;
+  }
+
+  .hero-text {
+    font-size: clamp(4rem, 10vw, 4rem);
+    top: 25%;
+  }
 }
 
-@media (max-width: 1270px) and (min-width: 1010px) {
+/* @media (max-width: 1270px) and (min-width: 1010px) {
   .nav-links a {
     font-size: 0.85rem;
     padding: 0.7rem 0.9rem;
+  }
+  .hero-text {
+    font-size: 7rem;
   }
 }
 
@@ -215,13 +359,22 @@
     padding: 0.6rem 0.8rem;
     min-height: 2.8rem;
   }
-}
 
-/* MOBILE */
+  .hero-text {
+    font-size: 7rem;
+  }
+} */
+
+/* --- Mobile (até 768px) --- */
 @media (max-width: 768px) {
+  .site-header {
+    background-attachment: scroll;
+    height: 100vh;
+    min-height: 500px;
+  }
   .navbar {
     padding: 0.5rem 1rem;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
   }
 
@@ -245,6 +398,7 @@
     right: 0;
     flex-direction: column;
     background-color: rgba(102, 102, 102, 0.95);
+    backdrop-filter: blur(15px);
     border-radius: 0 0 8px 8px;
     padding: 1rem;
     gap: 0.5rem;
@@ -254,7 +408,8 @@
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 10;
-    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .nav-links.open {
@@ -272,10 +427,52 @@
   .nav-links a {
     display: block;
     text-align: center;
-    padding: 0.8rem 1rem;
+    padding: 1rem;
     font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
     white-space: normal;
+  }
+
+  .nav-links a.btn-aluno {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .hero-text {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    padding: 0 1rem;
+    top: 30%;
+  }
+}
+
+/* --- Mobile pequeno (até 480px) --- */
+@media (max-width: 480px) {
+  .site-header {
+    min-height: 450px;
+  }
+
+  .navbar {
+    width: 98%;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .logo img {
+    width: 35px;
+    padding-left: 0.3rem;
+  }
+
+  .nav-links {
+    padding: 0.8rem;
+  }
+
+  .nav-links a {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-text {
+    font-size: clamp(2rem, 7vw, 3rem);
+    padding: 0 0.5rem;
   }
 }
