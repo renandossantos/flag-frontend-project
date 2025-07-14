@@ -1,0 +1,396 @@
+/* streak Widget Styles */
+/* layout para aba 
+.streak-widget {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+
+  border: 3px solid red;
+}
+*/
+.streak-widget {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  /* margin: 1rem 0; */
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  /* max-height: 200px; */
+
+  border: 3px solid red;
+}
+
+.streak-widget:hover {
+  transform: translateY(-5px);
+}
+
+.streak-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.streak-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.streak-icon {
+  color: #f1c40f;
+  margin: 0 0.5rem;
+}
+
+.flame-icon {
+  transition: all 0.3s ease;
+}
+
+.flame-icon.active {
+  color: #ff6b35;
+  filter: drop-shadow(0 0 8px rgba(255, 107, 53, 0.6));
+}
+
+.flame-icon.inactive {
+  color: #ccc;
+  opacity: 0.5;
+}
+
+.streak-main {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.streak-count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.streak-motivation {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.week-progress {
+  margin-bottom: 2rem;
+}
+
+.week-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.week-days {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0 auto;
+  max-width: 320px;
+
+  /* border: 3px solid red; */
+}
+
+.week-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.day-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.day-circle.completed {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #f1c40f;
+  color: #f1c40f;
+  box-shadow: 0 0 10px rgba(241, 196, 15, 0.4);
+}
+
+.day-label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* ===========================================
+   DIVIDER
+   =========================================== */
+
+.streak-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  margin: 1.5rem 0;
+}
+
+.achievements-section {
+  margin-bottom: 1.5rem;
+}
+
+.achievements-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.achievements-grid {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.achievement:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.achievement.unlocked {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.achievement-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.achievement-days {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.page-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ===========================================
+   NEXT ACHIEVEMENT SECTION
+   =========================================== */
+
+.next-achievement {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.next-achievement div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.target-icon {
+  color: #f1c40f;
+  flex-shrink: 0;
+}
+
+.all-unlocked {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f1c40f;
+}
+
+/* ===========================================
+   ACTION BUTTON
+   =========================================== */
+
+.add-workout-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  border: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+}
+
+.add-workout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(78, 205, 196, 0.4);
+}
+
+.add-workout-btn:active {
+  transform: translateY(0);
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 480px) {
+  .streak-widget {
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+
+  .streak-count {
+    font-size: 2rem;
+  }
+
+  .week-days {
+    gap: 0.25rem;
+  }
+
+  .day-circle {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+
+  .achievements-grid {
+    gap: 0.5rem;
+  }
+
+  .achievement {
+    min-width: 70px;
+    padding: 0.5rem;
+  }
+
+  .achievement-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .achievement-label {
+    font-size: 0.75rem;
+  }
+
+  .achievement-days {
+    font-size: 0.7rem;
+  }
+}
+
+/* ===========================================
+   ANIMATIONS
+   =========================================== */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.achievement.unlocked .achievement-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.4);
+  }
+}
+
+.day-circle.completed {
+  animation: glow 3s infinite;
+}

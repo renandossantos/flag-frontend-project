@@ -58,11 +58,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 95%;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 
-  /* border: 2px solid yellow; */
+  border: 2px solid yellow;
 }
 
 /* Tablet */

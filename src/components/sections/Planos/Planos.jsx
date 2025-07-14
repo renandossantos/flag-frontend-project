@@ -19,7 +19,7 @@ function Planos() {
   if (!planos.length) return null;
 
   return (
-    <section className="planos">
+    <section className="planos-container">
       <h2 className="planos-titulo">Nossos Planos</h2>
 
       <div className="swiper-container-planos">

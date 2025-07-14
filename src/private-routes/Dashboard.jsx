@@ -4,6 +4,7 @@ import "./Dashboard.css";
 import WeatherWidget from "./widgtes-dashboard/Weather";
 import ClockWidget from "./widgtes-dashboard/Clock";
 import Treinos from "./treinos/Treinos";
+import StreakWidget from "./widgtes-dashboard/Streak";
 
 const Dashboard = () => {
   return (
@@ -11,6 +12,10 @@ const Dashboard = () => {
       <h1 className="dashboard-titulo">Treinos</h1>
 
       <aside className="sidebar-widgets">
+        {/* <div className="widget">
+          <StreakWidget />
+        </div> */}
+
         <div className="widget">
           <ClockWidget />
         </div>
@@ -21,6 +26,7 @@ const Dashboard = () => {
       </aside>
 
       <main className="widgets-main">
+        <StreakWidget />
         <Treinos />
       </main>
     </div>
